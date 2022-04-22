@@ -1,0 +1,142 @@
+#include<iostream>
+#include <stdio.h>
+#include <string.h>
+#include<string>
+#include <iomanip>
+using namespace std;
+
+//Ejercicio 1
+//Escriba un código que solicite al usuario ingresar dos números enteros y que muestre
+//el producto de ambos.
+
+/*int main(){
+    int a=0,b=0,c=0;
+    cout<<"Ingrese el primer número entero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo número entero: ";
+    cin>>b;
+    c=a*b;
+    cout<<"El producto de los números es: "<<c;
+    return 0;
+}*/
+
+//Ejercio 2
+//Escriba un código que solicite el primer nombre de una persona,
+//el apellido paterno y el apellido materno. Retornar su correo UNSA generado,
+//el cual consiste de la primera letra del nombre, el apellido paterno completo,
+//y la primera letra del apellido materno. (se agrega el dominio de la universidad al final).
+
+/*int main(){
+    string na,ln,mln;
+    cout<<"Ingrese su primer nombre: ";
+    cin>>na;
+    cout<<"Ingrese su apellido paterno: ";
+    cin>>ln;
+    cout<<"ingrese su apellido materno: ";
+    cin>>mln;
+    cout<<na[0]<<ln<<mln[0]<<"@unsa.edu.pe";
+}*/
+
+//Ejercicio 4
+//Escriba un código que solicite una cantidad de minutos específica y muestre como
+//resultado la hora y fecha resultante tomando como referencia la hora y fecha actual y
+//restarle el tiempo indicado.
+
+/*int main(){
+    int number;
+    cin>>number;
+    int h = 0, m = 0;
+    h = number / 60;
+    m = number % 60;
+    cout<<h<<"h "<<m<<"m"<<endl;
+
+    int h_now , m_now ;
+    cout<<"Ingrese la hora actual en formato 24h (14 23)"<<endl;
+    cin>>h_now>>m_now;
+    int result_h=0 , result_m= 0 ;
+    int minutes = (h_now * 60 + m_now) - (number);
+    result_h = minutes / 60;
+    result_m = minutes % 60;
+    cout<<result_h<<":"<<result_m<<endl;
+
+    return 0;
+}*/
+
+//Ejercicio 5
+//Elabore un código que reciba como entrada una secuencia de caracteres que contiene
+//un numero flotante y retorne el número redondeado
+
+/*int main(){
+    float a;
+    cout<<"Ingrese el número: ";
+    cin>>a;
+    cout<<fixed<<setprecision(0)<<a<<endl;
+    return 0;
+}*/
+
+//Ejercicio 6
+//Elabore un código que solicite un numero entre 100 < x < 999 y muestre el resultado
+//en binario.
+
+/*int main(){
+    int a;
+    cout<<"Ingrese un número entre 100 y 999: ";
+    cin>>a;
+    string num="";
+    if(a>100 && a<999){
+        while(a>0){
+            if(a%2==0){
+                num="0"+num;
+            }
+            else{
+                num="1"+num;
+            }
+            a=(int)a/2;
+        }
+        cout<<"El número en binario es: "<<num;
+    }
+    else{
+        cout<<"Número no valido.";
+    }
+    return 0;
+}*/
+
+//Ejercicio 7
+//Elabore un algoritmo que lea por teclado dos números enteros y determine si uno es
+//divisor del otro.
+
+/*int main(){
+    int a,b;
+    cout<<"Ingrese el primer número: ";
+    cin>>a;
+    cout<<"Ingrese el segundo número: ";
+    cin>>b;
+    if(a%b==0){
+        cout<<"El número "<<b<<" es divisor de "<<a;
+    }
+    else if(b%a==0){
+        cout<<"El número "<<a<<" es divisor de "<<b;
+    }
+    else{
+        cout<<"No hay divisores.";
+    }
+    return 0;
+}*/
+
+//Ejercicio 9
+//Escribir un programa que lea 10 datos desde el teclado y sume sólo aquellos que sean
+//negativos
+
+/*int main(){
+    int b=0;
+    for(int i=0;i<10;i++){
+        int a=0;
+        cout<<"Ingrese un número: ";
+        cin>>a;
+        if(a<0){
+            b=b+a;
+        }
+    }
+    cout<<"La suma es: "<<b;
+    return 0;
+}*/
